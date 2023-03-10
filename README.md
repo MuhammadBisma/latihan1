@@ -139,3 +139,254 @@ header h1 {
     color: #842626;
 }
 ```
+
+## PEMBUATAN HERO PANEL
+
+![tambah_gambar](/img/8.png)
+
+Dalam pembuatan Hero Panel kalian perlu memasukan kode html dan juga CSS seperti berikut ini:
+
+```html
+<section id="hero">
+    <h1>Hello World!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+elit, iaculis innisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+pretium ac.</p>
+    <a href="home.html" class="btn btn-large">Learn more &raquo;</a>
+</section>
+```
+
+```css
+/* Hero Panel */
+#hero {
+    background-color: #f0d3de;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+#hero h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+#hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+```
+
+## PEMBUATAN SIDEBAR WIDGET
+
+![tambah_gambar](/img/4.png)
+
+Untuk menambahkan element lain dalam sidebar dan sebuah Widget CSS seperti gambar diatas, kalian dapat menggunakan kode berikut:
+
+```html
+<aside id="sidebar">
+    <div class="widget-box">
+        <h3 class="title">Widget Header</h3>
+        <ul>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+            <li><a href="#">Widget Link</a></li>
+        </ul>
+    </div>
+    <div class="widget-box">
+        <h3 class="title">Widget Text</h3>
+        <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt
+arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis. Integer
+pharetra est nunc, nec pretium nunc pretium ac.</p>
+    </div>
+</aside>
+```
+
+```css
+/* widget */
+.widget-box {
+    border:1px solid rgb(0, 0, 0);
+    margin-bottom:20px;
+}
+.widget-box .title {
+    padding:10px 16px;
+    background-color:#902f46;
+    color:rgb(255, 255, 255);
+}
+.widget-box ul {
+    list-style-type:none;
+}
+.widget-box li {
+    border-bottom:1px solid rgb(216, 161, 181);
+}
+.widget-box li a {
+padding:10px 16px;
+color:rgb(100, 18, 18);
+display:block;
+text-decoration:none;
+}
+.widget-box li:hover a {
+background-color:rgb(235, 188, 206);
+}
+.widget-box p {
+padding:15px;
+line-height:25px;
+}
+```
+
+## PENGATURAN FOOTER
+
+![tambah_gambar](/img/9.png)
+
+Gunakan kode berikut ini untuk mendapatkan hasil seperti diatas.
+
+```css
+/* footer */
+footer {
+    clear:both;
+    background-color:#c67eb0;
+    padding:20px;
+    color:rgb(39, 3, 3);
+}
+```
+
+## PENAMBAHAN ELEMEN LAIN PADA MAIN CONTENT
+
+![tambah_gambar](/img/5.png)
+
+Penambahan elemen lainnya pada Main Content seperti gambar diatas dibutuhkan sebuah kode html dan CSS seperti dibawah ini:
+
+```html
+<section id="main">
+    <div class="row">
+        <div class="box">
+            <img src="https://dummyimage.com/120/db7d25/fff.png" alt=""
+class="image-circle">
+            <h3>Heading</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis
+euismod.</p>
+            <a href="#" class="btn btn-default">View detail</a>
+        </div>
+        <div class="box">
+            <img src="https://dummyimage.com/120/3e73e6/fff.png" alt=""
+class="image-circle">
+            <h3>Heading</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis
+euismod.</p>
+            <a href="#" class="btn btn-default">View detail</a>
+        </div>
+        <div class="box">
+            <img src="https://dummyimage.com/120/71e6d4/fff.png" alt=""
+class="image-circle">
+            <h3>Heading</h3>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis
+euismod.</p>
+            <a href="#" class="btn btn-default">View detail</a>
+        </div>
+    </div>
+</section>
+```
+
+```css
+/* box */
+.box {
+    display:block;
+    float:left;
+    width:33.333333%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    padding:0 10px;
+    text-align:center;
+}
+.box h3 {
+    margin: 15px 0;
+}
+.box p {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+box img {
+    border: 0;
+    vertical-align: middle;
+}
+.image-circle {
+    border-radius: 50%;
+}
+.row {
+    margin: 0 -10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.row:after, .row:before,
+.entry:after, .entry:before {
+    content:'';
+    display:table;
+}
+.row:after,
+.entry:after {
+    clear:both;
+}
+```
+
+## PENAMBAHAN CONTENT ARTIKEL
+
+![tambah_gambar](/img/6.png)
+
+Untuk dapat membuat sebuah Content Artikel atau sebuah poit penting dalam sebuah artikel seperti gambar diatas, dibutuhkan sebuah kode Html dan juga CSS seperti dibawah ini:
+
+```html
+<hr class="divider" />
+<article class="entry">
+    <h2>First featurette heading.</h2>
+    <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+pretium ac.</p>
+</article>
+<hr class="divider" />
+<article class="entry">
+    <h2>First featurette heading.</h2>
+    <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="" class="right-img">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+pretium ac.</p>
+</article>
+```
+
+```css
+.divider {
+    border:0;
+    border-top:5px solid #d19f9f;
+    margin:40px 0;
+}
+/* entry */
+.entry {
+    margin: 15px 0;
+}
+.entry h2 {
+    margin-bottom: 20px;
+}
+.entry p {
+    line-height: 25px;
+}
+.entry img {
+    float: left;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.entry .right-img {
+    float: right;
+}
+```
+## HASIL AKHIRNYA
+
+![tambah_gambar](/img/7.png)
+
+
+
+
