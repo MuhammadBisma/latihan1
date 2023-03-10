@@ -29,6 +29,9 @@ Pertama, disini saya akan membuat sebuah dokumen dasar Htmlnya terlebih dahulu, 
 
 Setelah membuat dasarnya seperti diatas, selanjutnya tambahkan sebuah kode untuk membuat Box Element dengan tag div seperti dibawah ini:
 
+
+![tambah_gambar](/img/2.png)
+
 Dengan menggunakan kode berikut:
 
 ```html
